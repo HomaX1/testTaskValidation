@@ -42,7 +42,7 @@
                 <label for="link">URL</label>
                 <input type="url" class="form-control" id="link" name="link" placeholder="URL" required>
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="submit" class="submitBtn btn btn-default">Submit</button>
         </form>
     </div>
 </div>
@@ -50,7 +50,8 @@
 <script src="node_modules/jquery/dist/jquery.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="node_modules/jquery-validation/dist/jquery.validate.js"></script>
-<script src="scripts.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/ajax.js"></script>
 
 </body>
 </html>
