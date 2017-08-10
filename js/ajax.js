@@ -16,6 +16,7 @@ $().ready(function () {
             url: "../login.php",
             data: JSON.stringify(formData),
             success: function(data) {
+                $('#signForm').fadeOut();
                 console.log(data);
             }
         });

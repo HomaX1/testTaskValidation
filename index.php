@@ -12,7 +12,7 @@
 
 <div class="container">
     <div class="row">
-        <form class="signUpForm col-md-6 col-md-offset-3">
+        <form id="signForm" class="signUpForm col-md-6 col-md-offset-3">
             <h1>Total Information</h1>
             <div class="form-group">
                 <label for="name">Name</label>
@@ -42,10 +42,20 @@
                 <label for="link">URL</label>
                 <input type="url" class="form-control" id="link" name="link" placeholder="URL" required>
             </div>
-            <button type="submit" class="submitBtn btn btn-default">Submit</button>
+            <button type="submit" class="submitBtn btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">Submit</button>
         </form>
+
+        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <h2 class="modal-title text-center bg-success">Sign up was successful!</h2>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
+
 
 <script src="node_modules/jquery/dist/jquery.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
