@@ -13,10 +13,10 @@ $().ready(function () {
 
         $.ajax({
             type: "POST",
-            url: "login.php",
+            url: "../login.php",
             data: JSON.stringify(formData),
-            success: function() {
-                console.log('Умничка!', JSON.stringify(formData));
+            success: function(data) {
+                console.log(data);
             }
         });
     });
